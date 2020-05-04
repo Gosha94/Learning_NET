@@ -11,7 +11,7 @@ namespace InterfaceConsoleApp.Classes
         public int Height { get; }
         public string Name { get; }
 
-        public string TalkAboutYourself()
+        //public string TalkAboutYourself();
 
     }
 }

@@ -48,7 +48,7 @@ namespace HideAndSeek_HouseExplorer_v2
                 if (currentLocation is IHidingPlace)
             {
                 IHidingPlace hidingPlace = currentLocation as IHidingPlace;
-                btn_Check.Text = "Смотрим " +hidingPlace.HidingPlaceName;
+                btn_Check.Text = "Смотрим " + hidingPlace.HidingPlaceName;
                 btn_Check.Visible = true;
             }            else
                 btn_Check.Visible = false;
@@ -114,7 +114,7 @@ namespace HideAndSeek_HouseExplorer_v2
             cmbBx_Exits.Visible = false;
         }
 
-        private void btn_Hide_Click(object sender, System.EventArgs e)
+        private void Btn_Hide_Click(object sender, System.EventArgs e)
         {
             btn_Hide.Visible = false;
             for (int i = 1; i <= 10; i++)
@@ -132,7 +132,7 @@ namespace HideAndSeek_HouseExplorer_v2
             MoveToANewLocation(livingRoom);
         }
 
-        private void btn_Check_Click(object sender, System.EventArgs e)
+        private void Btn_Check_Click(object sender, System.EventArgs e)
         {
             Moves++;
             if (opponent.Check(currentLocation))
@@ -140,6 +140,16 @@ namespace HideAndSeek_HouseExplorer_v2
             else
                 RedrawForm();
         }
-        
+
+        private void btn_GoThroughTheDoor_Click(object sender, System.EventArgs e)
+        {
+            IHasExteriorDoor hasDoor = currentLocation as IHasExteriorDoor;
+            MoveToANewLocation(hasDoor.DoorLocation);
+        }
+
+        private void btn_goHere_Click(object sender, System.EventArgs e)
+        {
+            MoveToANewLocation(currentLocation.Exits[cmbBx_Exits.SelectedIndex]);
+        }
     }
 }
