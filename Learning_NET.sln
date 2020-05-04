@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseExplorer", "HouseExplo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideAndSeek_HouseExplorer_v2", "HideAndSeek_HouseExplorer_v2\HideAndSeek_HouseExplorer_v2.csproj", "{EC979E16-6D06-445C-9B54-736B0CD03FEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{C83A95D1-F7C3-472D-8EB1-E9BC5A15F6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AceOfSpadesSimulator", "AceOfSpadesSimulator\AceOfSpadesSimulator.csproj", "{AFB3DCE4-D934-40CC-BF04-7C5341C84291}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83A95D1-F7C3-472D-8EB1-E9BC5A15F6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83A95D1-F7C3-472D-8EB1-E9BC5A15F6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83A95D1-F7C3-472D-8EB1-E9BC5A15F6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83A95D1-F7C3-472D-8EB1-E9BC5A15F6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB3DCE4-D934-40CC-BF04-7C5341C84291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB3DCE4-D934-40CC-BF04-7C5341C84291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB3DCE4-D934-40CC-BF04-7C5341C84291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB3DCE4-D934-40CC-BF04-7C5341C84291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
