@@ -32,8 +32,8 @@
             this.btn_goHere = new System.Windows.Forms.Button();
             this.cmbBx_Exits = new System.Windows.Forms.ComboBox();
             this.txtBx_Description = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Check = new System.Windows.Forms.Button();
+            this.btn_Hide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_GoThroughTheDoor
@@ -70,31 +70,33 @@
             this.txtBx_Description.Size = new System.Drawing.Size(351, 196);
             this.txtBx_Description.TabIndex = 4;
             // 
-            // button1
+            // btn_Check
             // 
-            this.button1.Location = new System.Drawing.Point(12, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(351, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Смотрим";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Check.Location = new System.Drawing.Point(12, 281);
+            this.btn_Check.Name = "btn_Check";
+            this.btn_Check.Size = new System.Drawing.Size(351, 23);
+            this.btn_Check.TabIndex = 8;
+            this.btn_Check.Text = "Смотрим";
+            this.btn_Check.UseVisualStyleBackColor = true;
+            this.btn_Check.Click += new System.EventHandler(this.btn_Check_Click);
             // 
-            // button2
+            // btn_Hide
             // 
-            this.button2.Location = new System.Drawing.Point(12, 310);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(351, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Прячься!";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Hide.Location = new System.Drawing.Point(12, 310);
+            this.btn_Hide.Name = "btn_Hide";
+            this.btn_Hide.Size = new System.Drawing.Size(351, 23);
+            this.btn_Hide.TabIndex = 9;
+            this.btn_Hide.Text = "Прячься!";
+            this.btn_Hide.UseVisualStyleBackColor = true;
+            this.btn_Hide.Click += new System.EventHandler(this.btn_Hide_Click);
             // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 343);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Hide);
+            this.Controls.Add(this.btn_Check);
             this.Controls.Add(this.btn_GoThroughTheDoor);
             this.Controls.Add(this.btn_goHere);
             this.Controls.Add(this.cmbBx_Exits);
@@ -102,7 +104,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frm_Main";
-            this.Text = "Form1";
+            this.Text = "Прятки в доме";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,8 +116,8 @@
         private System.Windows.Forms.Button btn_goHere;
         private System.Windows.Forms.ComboBox cmbBx_Exits;
         private System.Windows.Forms.TextBox txtBx_Description;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Check;
+        private System.Windows.Forms.Button btn_Hide;
     }
 }
 
