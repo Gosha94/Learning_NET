@@ -2,7 +2,7 @@
 
 using DynamicListSizing.Enums;
 using DynamicListSizing.Classes;
-
+using System;
 
 namespace DynamicListSizing
 {
@@ -33,6 +33,18 @@ namespace DynamicListSizing
                 shoe.Style = Style.Flipflops;
                 shoe.Color = "Оранжевый";
             }
+
+            shoeCloset.RemoveAt(4);
+
+            Shoe thirdShoe = shoeCloset[2];
+            Shoe secondShoe = shoeCloset[1];
+
+            shoeCloset.Clear();
+
+            shoeCloset.Add(thirdShoe);
+
+            if (shoeCloset.Contains(secondShoe))
+                Console.WriteLine("Удивительно!");
 
         }
     }

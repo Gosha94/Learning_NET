@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1062
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main_Proj", "Learning_NET\Main_Proj.csproj", "{4B671111-60A0-4059-AD67-EF0E02E04EF1}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AceOfSpadesSimulator", "AceOfSpadesSimulator\AceOfSpadesSimulator.csproj", "{AFB3DCE4-D934-40CC-BF04-7C5341C84291}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicListSizing", "DynamicListSizing\DynamicListSizing.csproj", "{84004983-95C6-43AD-8AFC-8E4EE3C8D0BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question_str_383", "Question_str_383\Question_str_383.csproj", "{CA9EFDEA-3306-40C4-84A2-F07FFC2A2CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{84004983-95C6-43AD-8AFC-8E4EE3C8D0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84004983-95C6-43AD-8AFC-8E4EE3C8D0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84004983-95C6-43AD-8AFC-8E4EE3C8D0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9EFDEA-3306-40C4-84A2-F07FFC2A2CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9EFDEA-3306-40C4-84A2-F07FFC2A2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9EFDEA-3306-40C4-84A2-F07FFC2A2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9EFDEA-3306-40C4-84A2-F07FFC2A2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
