@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1062
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main_Proj", "Learning_NET\Main_Proj.csproj", "{4B671111-60A0-4059-AD67-EF0E02E04EF1}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseExplorer", "HouseExplorer\HouseExplorer.csproj", "{95B87A01-09EA-4D36-B617-B9B014D88626}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideAndSeek_HouseExplorer_v2", "HideAndSeek_HouseExplorer_v2\HideAndSeek_HouseExplorer_v2.csproj", "{EC979E16-6D06-445C-9B54-736B0CD03FEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AceOfSpades_Game", "AceOfSpades_Game\AceOfSpades_Game.csproj", "{6E325714-6B7A-4230-B569-785060992264}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC979E16-6D06-445C-9B54-736B0CD03FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E325714-6B7A-4230-B569-785060992264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E325714-6B7A-4230-B569-785060992264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E325714-6B7A-4230-B569-785060992264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E325714-6B7A-4230-B569-785060992264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
