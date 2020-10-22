@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04F20691-C98D-4714-A22D-0119CAD87B6B}</ProjectGuid>
+    <ProjectGuid>{E3B8A3F4-14C4-4FA0-8F8C-9796D2EF5E02}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Events</RootNamespace>
-    <AssemblyName>Events</AssemblyName>
+    <RootNamespace>ThreadAndAsync</RootNamespace>
+    <AssemblyName>ThreadAndAsync</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
