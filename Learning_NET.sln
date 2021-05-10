@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringSplitter", "StringSpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayShifter", "ArrayShifter\ArrayShifter.csproj", "{C1B77366-EF8D-4E7E-B5E8-086EB465F9BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpMaskCalculator", "IpMaskCalculator\IpMaskCalculator.csproj", "{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,10 @@ Global
 		{C1B77366-EF8D-4E7E-B5E8-086EB465F9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B77366-EF8D-4E7E-B5E8-086EB465F9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B77366-EF8D-4E7E-B5E8-086EB465F9BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -218,6 +224,7 @@ Global
 		{A4F27C25-B301-465F-8AFA-20C94ED76866} = {CEB47356-6AD1-435A-BAB3-D5727ACA51C0}
 		{D2D710F8-1A48-49E2-8A29-A081ED441AF1} = {C7844A84-A7F4-4FD7-95BD-E3E7B7373982}
 		{C1B77366-EF8D-4E7E-B5E8-086EB465F9BE} = {C7844A84-A7F4-4FD7-95BD-E3E7B7373982}
+		{6C88F452-A3D3-402F-B3F1-83E4FDEA4A2C} = {C7844A84-A7F4-4FD7-95BD-E3E7B7373982}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E9BFA71-BF4A-43F8-B364-DA3162997907}
