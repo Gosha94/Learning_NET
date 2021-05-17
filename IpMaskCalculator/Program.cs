@@ -7,6 +7,7 @@ namespace IpMaskCalculator
     {
         static void Main(string[] args)
         {
+            #region Zadanie
             /*
             
             Учитывая IP-адрес и маску в формате CIDR, вы должны вывести сетевой адрес и широковещательный адрес.
@@ -56,25 +57,79 @@ namespace IpMaskCalculator
             192.168.0.0
             192.168.0.255
              */
+            #endregion
 
+            // 77.65.155.7/7
 
-            //string inputData = Console.ReadLine();
-            string inputData = "192.168.0.5/24";
+            // 76.0.0.0
+            // 77.255.255.255
+
+            string inputData = "77.65.155.7/7";
             var ipWithMask = inputData.Split('/');
-            
-            // Order of performing: Split -> Foreach -> Convert.ToString -> ToArray -> String.Join
-            var result = String.Join(".", 
-                (
+                        
+            var result = // GetIpInBinaryFormat()
+                         // Order of performing: Split -> Foreach -> Convert.ToString -> ToArray -> String.Join
                 ipWithMask[0]
                     .Split('.')
                         .Select(x => Convert.ToString(Int32.Parse(x), 2).PadLeft(8, '0'))  // PadLeft - добавляем слева числа нули, пока кол-во символов не будет достигать 8
-                ).ToArray()
-            );
+                .ToArray()
+            ;
 
+            var mask = Int32.Parse(ipWithMask[1]);
 
-            Console.WriteLine("network address");
-            Console.WriteLine("broadcast address");
+            var numberOfRoundMaskOctets = (mask / 8);
+            
+            string[] broadcastAddr = new string[result.Length];
+            result.CopyTo(broadcastAddr, 0);
 
+            string finalNetworkAddr;
+            string finalBroadcastAddr;
+
+            if (mask % 8 != 0)
+            {
+                // CuttedMaskCalc();
+                var numbOfOriginBitsInOctet = mask - (8 * numberOfRoundMaskOctets);
+                
+                for (int i = numberOfRoundMaskOctets; i <= result.Length - 1; i++)
+                {
+                    string tempData = "";
+                    tempData = result[i].Substring(0, numbOfOriginBitsInOctet);
+
+                    if (i == numberOfRoundMaskOctets) // Octet, going after rounded
+                    {
+                        result[i] = tempData.PadRight(8, '0');
+                        broadcastAddr[i] = tempData.PadRight(8, '1');
+                    }                    
+                    else // Next Octets
+                    {
+                        result[i] = ("").PadLeft(8, '0');
+                        broadcastAddr[i] = ("").PadLeft(8, '1');
+                    }
+                }
+            }
+            else
+            {
+                // RoundedMaskCalc();
+
+                for (int i = numberOfRoundMaskOctets; i <= result.Length - 1; i++)
+                {
+                    result[i] = ("").PadLeft(8, '0');
+                    broadcastAddr[i] = ("").PadLeft(8, '1');
+                }                               
+            }            
+
+            finalNetworkAddr = // GetIpInDecimalFormat()
+                    String.Join(".", 
+                        (result.Select(x => Convert.ToString(Convert.ToInt32(x, 2))) ) 
+                    );
+            finalBroadcastAddr = // GetIpInDecimalFormat()
+                String.Join(".", 
+                    (broadcastAddr.Select(x => Convert.ToString(Convert.ToInt32(x, 2)) ) )
+                );
+
+            Console.WriteLine(finalNetworkAddr);
+            Console.WriteLine(finalBroadcastAddr);
+            Console.ReadLine();
         }
     }
 }
