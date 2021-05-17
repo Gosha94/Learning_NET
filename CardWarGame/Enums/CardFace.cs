@@ -1,5 +1,8 @@
 ﻿namespace CardWarGame.Enums
 {
+    /// <summary>
+    /// Перечисление достоинств карт
+    /// </summary>
     public enum CardFace
     {
         Two,
@@ -14,6 +17,7 @@
         Jack,
         Queen,
         King,
-        Ace
+        Ace,
+        Nothing
     }
 }

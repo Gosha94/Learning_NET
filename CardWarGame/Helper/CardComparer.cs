@@ -1,4 +1,5 @@
-﻿using CardWarGame.Models;
+﻿using CardWarGame.Enums;
+using CardWarGame.Interfaces.Card;
 using System;
 
 namespace CardWarGame.Helper
@@ -7,20 +8,35 @@ namespace CardWarGame.Helper
     /// Универсальный класс-компаратор объектов
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    class CardComparer<T> : IEquatable<T>
-        where T: CardDeck, new()
+    class CardComparer<T> : IEquatable<T>, ICard
+        where T: ICard, new()
     {
-        bool IEquatable<T>.Equals(T other)
+
+        #region Implemented Shit
+
+        public CardFace FaceOfCard { get; }
+
+        public CardSuit SuitOfCard { get; }
+
+        void ICard.ShowdownCard()
         {
-            if (other.IsEmpty)
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
+        public bool Equals(T other)
+        {
+            if (other == null)
             {
                 return false;
             }
 
+            // Для ссылочного типа следует использовать ReferenceEquals, значимого - Equals
             return
-            object.ReferenceEquals(this.Name, other.Name) ||
-            this != null &&
-            this.Name.Equals(other.Name);
-        }
+                this.FaceOfCard.Equals(other.FaceOfCard)
+                &&
+                this.SuitOfCard.Equals(other.SuitOfCard);
+        }        
     }
 }

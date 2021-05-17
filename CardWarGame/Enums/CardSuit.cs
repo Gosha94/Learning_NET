@@ -1,5 +1,8 @@
 ﻿namespace CardWarGame.Enums
 {
+    /// <summary>
+    /// Перечисление мастей карт
+    /// </summary>
     public enum CardSuit
     {
         /// <summary>
@@ -17,6 +20,10 @@
         /// <summary>
         /// Пики
         /// </summary>
-        Spades
+        Spades,
+        /// <summary>
+        /// Пустая
+        /// </summary>
+        None
     }
 }

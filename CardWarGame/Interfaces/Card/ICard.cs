@@ -1,14 +1,25 @@
-﻿namespace CardWarGame.Interfaces.Card
+﻿using CardWarGame.Enums;
+
+namespace CardWarGame.Interfaces.Card
 {
     /// <summary>
     /// Интерфейс игровой сущности - карта
     /// </summary>
     interface ICard
     {
-        
         /// <summary>
-        /// Метод смены статуса карты (Рубашкой вверх либо открыта)
+        /// Св-во для достоинства карты
         /// </summary>
-        void ChangeState();
+        CardFace FaceOfCard { get; }
+
+        /// <summary>
+        /// Св-во для масти карты
+        /// </summary>
+        CardSuit SuitOfCard { get; }
+
+        /// <summary>
+        /// Метод вскрытия карты
+        /// </summary>
+        void ShowdownCard();
     }
 }
