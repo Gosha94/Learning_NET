@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04F20691-C98D-4714-A22D-0119CAD87B6B}</ProjectGuid>
+    <ProjectGuid>{7E4FD8F7-00B6-4599-837E-2374C993DAE7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Events</RootNamespace>
-    <AssemblyName>Events</AssemblyName>
+    <RootNamespace>CodeValidator</RootNamespace>
+    <AssemblyName>CodeValidator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Person.cs" />
+    <Compile Include="CodeValidator\CodeValidator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

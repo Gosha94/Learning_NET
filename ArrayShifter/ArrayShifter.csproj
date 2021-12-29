@@ -43,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IndexChanger\IndexChanger.cs" />
+    <Compile Include="IndexChanger\ArrayIndexChanger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shifter\ArrayShifter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
