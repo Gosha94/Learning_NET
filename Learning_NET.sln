@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30225.117
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main_Proj", "Learning_NET\Main_Proj.csproj", "{4B671111-60A0-4059-AD67-EF0E02E04EF1}"
 EndProject
@@ -83,7 +83,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageNotifier", "MessageN
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stepik", "Stepik", "{901C78E8-8181-4CF1-9D9D-C0288FB4EC44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stepik.OOP", "Stepik\Stepik.OOP\Stepik.OOP.csproj", "{196F381D-040F-4D90-BF3A-C0250CB49F87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stepik.OOP", "Stepik\Stepik.OOP\Stepik.OOP.csproj", "{196F381D-040F-4D90-BF3A-C0250CB49F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Up_And_Down_Cast", "Up_And_Down_Cast\Up_And_Down_Cast.csproj", "{41C15B95-6D67-4906-B72C-A2E0E50F48CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{196F381D-040F-4D90-BF3A-C0250CB49F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{196F381D-040F-4D90-BF3A-C0250CB49F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{196F381D-040F-4D90-BF3A-C0250CB49F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C15B95-6D67-4906-B72C-A2E0E50F48CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C15B95-6D67-4906-B72C-A2E0E50F48CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C15B95-6D67-4906-B72C-A2E0E50F48CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C15B95-6D67-4906-B72C-A2E0E50F48CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
